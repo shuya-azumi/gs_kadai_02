@@ -1,0 +1,132 @@
+/* ===== 全体 ===== */
+body {
+    background-color: #0f0f1a;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== ヘッダー ===== */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 2px solid #00ffcc;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 8px;
+    color: #00ffcc;
+    text-shadow: 0 0 20px #00ffcc;
+}
+
+/* ===== メイン ===== */
+main {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 20px;
+}
+
+/* ===== 対戦エリア（左右に並べる） ===== */
+.battle-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* プレイヤーエリア */
+.player-area,
+.computer-area {
+    width: 40%;
+    text-align: center;
+}
+
+.player-area h2,
+.computer-area h2 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+
+/* 手の表示 */
+.hand-display {
+    font-size: 80px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* VS */
+.vs {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff4466;
+    text-shadow: 0 0 20px #ff4466;
+    letter-spacing: 4px;
+}
+
+/* ===== ボタンエリア ===== */
+.btn-area {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn-area p {
+    font-size: 16px;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+ul li {
+    font-size: 48px;
+    background-color: #1a1a2e;
+    border: 2px solid #00ffcc;
+    border-radius: 16px;
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 0 10px #00ffcc44;
+}
+
+ul li:hover {
+    background-color: #00ffcc22;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+/* ===== 結果エリア ===== */
+.result-area {
+    text-align: center;
+}
+
+#judgement {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #00ffcc;
+    text-shadow: 0 0 20px #00ffcc;
+    min-height: 60px;
+}
+
+/* ===== フッター ===== */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    color: #444444;
+    font-size: 12px;
+    letter-spacing: 2px;
+}

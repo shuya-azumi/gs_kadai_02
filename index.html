@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけん</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>じゃんけん</h1>
+    </header>
+
+    <main>
+        <!-- 対戦エリア -->
+        <div class="battle-area">
+            <div class="player-area">
+                <h2>あなた</h2>
+                <div class="hand-display" id="player_hands">✊</div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="computer-area">
+                <h2>コンピューター</h2>
+                <div class="hand-display" id="pc_hands">？</div>
+            </div>
+        </div>
+
+        <!-- ボタンエリア -->
+        <div class="btn-area">
+            <p>手を選んでください</p>
+            <ul>
+                <li id="gu-btn">✊</li>
+                <li id="sc-btn">✌️</li>
+                <li id="pa-btn">🖐️</li>
+            </ul>
+        </div>
+
+        <!-- 結果エリア -->
+        <div class="result-area">
+            <div id="judgement"></div>
+        </div>
+    </main>
+
+    <footer>JANKEN GAME 2024</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/janken.js"></script>
+</body>
+</html>
